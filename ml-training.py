@@ -70,7 +70,3 @@ print('False positives: ', cm[0][1])
 print('False negatives', cm[1][0])
 print('True positives: ', cm[1][1])
 joblib.dump(model, "spam_pipeline.joblib")
-
-# Now we can save the model and make a new script that lets users input an email, 
-#   or maybe look into making an extension that automatically scans your emails? 
-#   could start with gmail only or something maybe
