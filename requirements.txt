@@ -1,0 +1,8 @@
+# Backend
+flask
+flask-cors
+
+# Machine learning
+scikit-learn
+joblib
+numpy
