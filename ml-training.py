@@ -67,7 +67,7 @@ print("Precision:", precision)#Percentage of true positives
 cm = confusion_matrix(y_test, y_pred)
 print('True negatives: ', cm[0][0])
 print('False positives: ', cm[0][1])
-print('False nagetives', cm[1][0])
+print('False negatives', cm[1][0])
 print('True positives: ', cm[1][1])
 joblib.dump(model, "spam_pipeline.joblib")
 
