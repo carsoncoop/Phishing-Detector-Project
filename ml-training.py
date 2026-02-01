@@ -4,6 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score, f1_score
 from sklearn.metrics import confusion_matrix
 import joblib
 
@@ -53,6 +54,13 @@ accuracy = model.score(X_test, y_test)
 print("Accuracy:", accuracy)
 
 y_pred = model.predict(X_test)
+
+recall = recall_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+
+print("Recall:", recall)
+print("F1 Score:", f1)
+
 precision = precision_score(y_test, y_pred) 
 print("Precision:", precision)#Percentage of true positives
 
